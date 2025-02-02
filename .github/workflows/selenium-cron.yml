@@ -1,0 +1,33 @@
+name: Run Selenium Tests at 2 AM (Monday to Friday)
+
+on:
+  schedule:
+    # This cron expression runs the workflow at 2 AM every Monday to Friday
+    - cron: '0 2 * * 1-5'
+
+jobs:
+  selenium-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Python (if you're using Python for Selenium tests)
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with your required version
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Selenium Tests
+        run: |
+          python -m unittest discover  # Or whatever command you use to run your tests
+
+      - name: Upload Test Results (optional)
+        uses: actions/upload-artifact@v2
+        with:
+          name: selenium-test-results
+          path: path/to/test/results  # Path to your test result reports
