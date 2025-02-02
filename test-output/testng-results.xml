@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-07T08:17:48 IST" name="Suite" finished-at="2024-07-07T08:29:08 IST" duration-ms="679530">
+    <groups>
+    </groups>
+    <test started-at="2024-07-07T08:17:48 IST" name="Test" finished-at="2024-07-07T08:29:08 IST" duration-ms="679530">
+      <class name="com.zinnia.tests.AN4FILI_Trust">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:17:52 IST" name="setUp" finished-at="2024-07-07T08:18:11 IST" duration-ms="19110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@47b179d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:17:52 IST" name="setUp" finished-at="2024-07-07T08:18:11 IST" duration-ms="19469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@39008c9f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC02(java.util.Map)[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:18:11 IST" name="TC02" description="To verify the fili test scenarios for Trust with Fixed Annuity" data-provider="getData" finished-at="2024-07-07T08:23:03 IST" duration-ms="292597" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{yearsinmutualfunds=2, repcomment2=Test, timehorizon=7, plantype=Non Qualified, trusteelastname=Abraham, password=LZ934JQ2Mw82, grantorname=WillSmith, repcomment1=Test, yearsinbonds=2, signedcity=California, menutext=, initialaction=Create application, loginid=Suneel_SR, surrenderchargeamount=0, trustownerdate=06/10/2024, testname=TC02, execute=yes, version=125.0.6422.141, yearsinannuities=2, trusteemobile2=988, trusteemobile3=9898, trusteeemailaddress=trustee@zinnia.com, agentname=Automation SR, trusteestreetaddress=Sunnymead Blvd, trusteemobile1=898, primarybenerelationtoannuitant=Other, paymentaccountnumber=5846855, trustownerrelationtoannuitant=Other, grantorssn1=985, trustownername=Abraham, grantorssn2=87, trusteepostalcode=92553, grantorssn3=9858, trustownerstate=CA, estimatedliquidnetworth=25000, trustowneraddress=Sunnymead Blvd, trusteecity=Moreno Valley, trustpaymentamount=25000, grantordob=06/08/2005, account_agent=Phone Investor Center Branch_MER, accountdesignation=Trust, browser=chrome, grantorcitizenship=USA, productname=Mass Mutual, trustpaymentmethod=Mutual Fund Redemption By Carrier, signedstate=California, situsTrust=California, trustmonetsource=New Money / Contribution, product=MassMutual Stable Voyage Fixed Deferred Annuity, yearsinstocks=2, trustownercity=Moreno Valley, trusteessn2=89, financialinstitute=Zinnia, trusteessn3=8895, userrole=Sales Representative, trusteessn1=689, grantoraddress=California, trusteefirstname=Goodwin, totalinvestmentobjectives=25000, carrier=MassMutual Financial Group, primarybeneficiaryentityname=zinnia, partner=FILI, ownertype=Grantor Trust, primarybeneficiarypercentage=100, trusteedob=06/11/1990, taxidentification1=89, taxidentification2=8989898, trustownerpostalcode=92553, trusteestate=CA, username=Usrivastava}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: control299011_listBox (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: control299011_listBox (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.zinnia.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:37)
+at com.zinnia.pages.BasePage.selectDropdown(BasePage.java:93)
+at com.zinnia.pages.CarrierProductPage.selectAccount(CarrierProductPage.java:18)
+at com.zinnia.tests.AN4FILI_Trust.TC02(AN4FILI_Trust.java:134)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#control299011_listBox"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [167f5250b5f23af6fff5a246eee6f95b, findElement {using=id, value=control299011_listBox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Suneel\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50471}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50471/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 167f5250b5f23af6fff5a246eee6f95b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method signature="TC02(java.util.Map)[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:18:11 IST" name="TC02" description="To verify the fili test scenarios for Trust with Fixed Annuity" data-provider="getData" finished-at="2024-07-07T08:23:05 IST" duration-ms="294012" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{yearsinmutualfunds=2, repcomment2=Test, timehorizon=7, plantype=Non Qualified, trusteelastname=Abraham, password=LZ934JQ2Mw82, grantorname=WillSmith, repcomment1=Test, yearsinbonds=2, signedcity=California, menutext=, initialaction=Create application, loginid=GarimaSR, surrenderchargeamount=0, trustownerdate=06/10/2024, testname=TC02, execute=yes, version=125.0.6422.141, yearsinannuities=2, trusteemobile2=988, trusteemobile3=9898, trusteeemailaddress=trustee@zinnia.com, agentname=Automation SR, trusteestreetaddress=Sunnymead Blvd, trusteemobile1=898, primarybenerelationtoannuitant=Other, paymentaccountnumber=5846855, trustownerrelationtoannuitant=Other, grantorssn1=985, trustownername=Abraham, grantorssn2=87, trusteepostalcode=92553, grantorssn3=9858, trustownerstate=CA, estimatedliquidnetworth=25000, trustowneraddress=Sunnymead Blvd, trusteecity=Moreno Valley, trustpaymentamount=25000, grantordob=06/08/2005, account_agent=Phone Investor Center Branch_MER, accountdesignation=Trust, browser=edge, grantorcitizenship=USA, productname=Mass Mutual, trustpaymentmethod=Mutual Fund Redemption By Carrier, signedstate=California, situsTrust=California, trustmonetsource=New Money / Contribution, product=MassMutual Stable Voyage Fixed Deferred Annuity, yearsinstocks=2, trustownercity=Moreno Valley, trusteessn2=89, financialinstitute=Zinnia, trusteessn3=8895, userrole=Sales Representative, trusteessn1=689, grantoraddress=California, trusteefirstname=Goodwin, totalinvestmentobjectives=25000, carrier=MassMutual Financial Group, primarybeneficiaryentityname=zinnia, partner=FILI, ownertype=Grantor Trust, primarybeneficiarypercentage=100, trusteedob=06/11/1990, taxidentification1=89, taxidentification2=8989898, trustownerpostalcode=92553, trusteestate=CA, username=Usrivastava}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: control435866_text (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50503}, msedge: {msedgedriverVersion: 126.0.2592.87 (883b9421f9ba..., userDataDir: C:\Users\Suneel\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50503/devtoo..., se:cdpVersion: 126.0.2592.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bdc0b0450c64fb2ac0e03f1291098ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: control435866_text (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50503}, msedge: {msedgedriverVersion: 126.0.2592.87 (883b9421f9ba..., userDataDir: C:\Users\Suneel\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50503/devtoo..., se:cdpVersion: 126.0.2592.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bdc0b0450c64fb2ac0e03f1291098ad
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.zinnia.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:41)
+at com.zinnia.pages.BasePage.sendKeys(BasePage.java:57)
+at com.zinnia.pages.TrustOwnerPage.trustName(TrustOwnerPage.java:25)
+at com.zinnia.tests.AN4FILI_Trust.TC02(AN4FILI_Trust.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:23:04 IST" name="tearDown" finished-at="2024-07-07T08:23:04 IST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zinnia.tests.AN4FILI_Trust@298a5e20]" started-at="2024-07-07T08:23:05 IST" name="tearDown" finished-at="2024-07-07T08:23:07 IST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zinnia.tests.AN4FILI_Trust -->
+      <class name="com.zinnia.tests.AN4FILI_Joint">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:17:52 IST" name="setUp" finished-at="2024-07-07T08:18:10 IST" duration-ms="18171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@162b3d47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:17:52 IST" name="setUp" finished-at="2024-07-07T08:18:12 IST" duration-ms="19550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@783115d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC01(java.util.Map)[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:18:10 IST" name="TC01" description="To verify the fili test scenarios for Joint Owner with Variable Annuity" data-provider="getData" finished-at="2024-07-07T08:23:03 IST" duration-ms="292806" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{primaryannuitantphysicaladdress=Suite Mn-304 Caribou St, yearsinmutualfunds=2, repcomment2=Test, plantype=Non Qualified, individualownerstate=CA, individualownermobile3=8989, individualownermobile2=888, individualownermobile1=989, jointownerfirstname=John, primaryannuitantlastname=Ebert, individualowneraddress=Sunnymead Blvd, primaryannuitantdob=06/04/1980, password=LZ934JQ2Mw82, primaryannuitantpostalcode=49015, primarybene2percentage=50, jointowneremailoaddress=suneel.kumar@zinnia.com, repcomment1=Test, yearsinbonds=2, primaryannuitantfirstname=Meagan, primarybene1entityname=Zininia, menutext=, initialaction=Create application, primarybene2relationtoowner=Other, loginid=Suneel_SR, fundamount=25000, testname=TC01, execute=yes, version=125.0.6422.141, yearsinannuities=2, primarybene1relationtoowner=Other, agentname=Automation SR, primaryannuitantcity=Michigan, jointownerstate=MI, jointownermobilepart1=895, paymentmethod1=Brokerage Account, jointownerprefix=Mr, jointownerstreetaddress=Street No.-1015, estimatedliquidnetworth=50000, jointownermobilepart3=8958, jointownermobilepart2=588, jointownerrelationtoowner=Other, primaryannuitantssn1=985, primarybene1percentage=50, jointownerpostalcode=49015, primaryannuitantssn3=8958, account_agent=Phone Investor Center Branch_MER, accountdesignation=Joint, primaryannuitantssn2=58, individualownercity=Moreno Valley, browser=chrome, jointownerlastname=Smith, product=New York Life Premier Variable Annuity - P Series, primaryannuitantrelationtoowner=Other, yearsinstocks=2, jointownerssn2=88, jointownerssn1=898, jointownerssn3=8989, jointownerdob=06/14/1995, userrole=Sales Representative, numberofdependents=10, individualownerpostalcode=92553, moneysource1=New Money / Contribution, totalinvestmentobjectives=50000, carrier=New York Life, partner=FILI, ownertype=Person, jointownercity=Michigan, primaryannuitantstate=MI, jointownerrelationtoannuitant=Other, username=Usrivastava}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: control299011_listBox (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: control299011_listBox (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.zinnia.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:37)
+at com.zinnia.pages.BasePage.selectDropdown(BasePage.java:93)
+at com.zinnia.pages.CarrierProductPage.selectAccount(CarrierProductPage.java:18)
+at com.zinnia.tests.AN4FILI_Joint.TC01(AN4FILI_Joint.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#control299011_listBox"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35e806da198614552847fa3bcc7b758e, findElement {using=id, value=control299011_listBox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Suneel\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50473/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 35e806da198614552847fa3bcc7b758e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method signature="TC01(java.util.Map)[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:18:12 IST" name="TC01" description="To verify the fili test scenarios for Joint Owner with Variable Annuity" data-provider="getData" finished-at="2024-07-07T08:29:06 IST" duration-ms="654707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{primaryannuitantphysicaladdress=Suite Mn-304 Caribou St, yearsinmutualfunds=2, repcomment2=Test, plantype=Non Qualified, individualownerstate=CA, individualownermobile3=8989, individualownermobile2=888, individualownermobile1=989, jointownerfirstname=John, primaryannuitantlastname=Ebert, individualowneraddress=Sunnymead Blvd, primaryannuitantdob=06/04/1980, password=LZ934JQ2Mw82, primaryannuitantpostalcode=49015, primarybene2percentage=50, jointowneremailoaddress=suneel.kumar@zinnia.com, repcomment1=Test, yearsinbonds=2, primaryannuitantfirstname=Meagan, primarybene1entityname=Zininia, menutext=, initialaction=Create application, primarybene2relationtoowner=Other, loginid=GarimaSR, fundamount=25000, testname=TC01, execute=yes, version=125.0.6422.141, yearsinannuities=2, primarybene1relationtoowner=Other, agentname=Automation SR, primaryannuitantcity=Michigan, jointownerstate=MI, jointownermobilepart1=895, paymentmethod1=Brokerage Account, jointownerprefix=Mr, jointownerstreetaddress=Street No.-1015, estimatedliquidnetworth=50000, jointownermobilepart3=8958, jointownermobilepart2=588, jointownerrelationtoowner=Other, primaryannuitantssn1=985, primarybene1percentage=50, jointownerpostalcode=49015, primaryannuitantssn3=8958, account_agent=Phone Investor Center Branch_MER, accountdesignation=Joint, primaryannuitantssn2=58, individualownercity=Moreno Valley, browser=edge, jointownerlastname=Smith, product=New York Life Premier Variable Annuity - P Series, primaryannuitantrelationtoowner=Other, yearsinstocks=2, jointownerssn2=88, jointownerssn1=898, jointownerssn3=8989, jointownerdob=06/14/1995, userrole=Sales Representative, numberofdependents=10, individualownerpostalcode=92553, moneysource1=New Money / Contribution, totalinvestmentobjectives=50000, carrier=New York Life, partner=FILI, ownertype=Person, jointownercity=Michigan, primaryannuitantstate=MI, jointownerrelationtoannuitant=Other, username=Usrivastava}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:23:03 IST" name="tearDown" finished-at="2024-07-07T08:23:04 IST" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zinnia.tests.AN4FILI_Joint@1151e434]" started-at="2024-07-07T08:29:06 IST" name="tearDown" finished-at="2024-07-07T08:29:08 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zinnia.tests.AN4FILI_Joint -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
