@@ -3,7 +3,7 @@ name: Run Selenium Tests at 2 AM (Monday to Friday)
 on:
   schedule:
     # This cron expression runs the workflow at 2 AM every Monday to Friday
-    - cron: '0 2 * * 1-5'
+    - cron: '0 20 * * 1-5'
 
 jobs:
   selenium-test:
