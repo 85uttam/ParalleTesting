@@ -1,0 +1,31 @@
+name: Run Selenium Tests on Commit
+
+on:
+  push:
+    branches:
+      - main  # or whichever branch you want to trigger the tests on
+
+jobs:
+  selenium-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'  # Adjust this to your required Java version
+
+      - name: Install Dependencies
+        run: mvn install
+
+      - name: Run Selenium Tests
+        run: mvn test  # Or your specific test command
+
+      - name: Upload Test Results (optional)
+        uses: actions/upload-artifact@v2
+        with:
+          name: selenium-test-results
+          path: extent-test-output  # Adjust if needed (use relative path)
